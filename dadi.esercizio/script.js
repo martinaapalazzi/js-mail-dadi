@@ -10,6 +10,23 @@ Se dobbiamo confrontare qualcosa che "cosa" ci serve?
 
 */ 
 
-const userNumberRandom = Math.floor(Math.random() * (100 - 0 + 1) + 0)
+const randomNumberMarti = Math.floor(Math.random() * (6 - 1 + 1) + 1);
+console.log (randomNumberMarti);
 
-console.log (userNumberRandom)
+const randomNumberBrowser = Math.floor(Math.random() * (6 - 1 + 1) + 1);
+console.log (randomNumberBrowser);
+
+let winnerMarti = 'Marti is the winner!';
+let winnerBrowser = 'Browser is the winner :(';
+let pareggio = 'Pareggio!'
+
+if (randomNumberMarti > randomNumberBrowser) {
+        console.log (winnerMarti)
+}
+else if (randomNumberBrowser > randomNumberMarti) {
+    console.log (winnerBrowser)
+}
+else {
+    console.log  (pareggio)
+}
+
